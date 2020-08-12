@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="home.html">
+        <div>
+            RegtNo:
+            <input type="text" value="H2372893" readonly>
+        </div>
+
+        <div>
+            <label>FirstName</label>
+        </div>
+        <div>
+            <input type="text" name="firstname" required>
+        </div>
+        <div>
+            <label>LastName</label>
+        </div>
+        <div>
+            <input required maxlength="5" minlength="3" type="text" name="lastname" placeholder="Enter your lastname">
+        </div>
+        <div>
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="email" name="email" value="a@gmail.com">
+        </div>
+        <div>
+            <label>Password</label>
+        </div>
+        <div>
+            <input type="password" name="email">
+        </div>
+        <div>
+            <label for="">Choose State</label>
+        </div>
+        <div>
+            <select name="state" id="">
+                <option value="KL">Kerala</option>
+                <option value="TN">TamilNadu</option>
+                <option value="KN">Karnataka</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Gender</label>
+        </div>
+        <div>
+            Male<input type="radio" name="gender" value="Male">
+            Female<input type="radio" name="gender" value="Female">
+        </div>
+        <div>
+            <label for="">Course</label>
+        </div>
+        <div>
+            Meanstack<input type="checkbox" name="course1" value="Meanstack">
+            Fullstack<input type="checkbox" name="course1" value="Fullstack">
+            DataScience<input type="checkbox" name="course3" value="DataScience">
+        </div>
+        <div>
+            <label for="">Dob</label>
+        </div>
+        <div>
+            <input type="date" name=dob>
+        </div>
+        <div>
+            <label for="">age</label>
+        </div>
+        <div>
+            <input type="number" max="30" required>
+        </div>
+
+        <input type="file" name="resume">
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+
+<!--this link will work -->
+    <iframe width="727" height="409" src="https://www.youtube.com/embed/cqyziA30whE" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+</html>
