@@ -1,0 +1,16 @@
+.customtable{
+    border:2px;
+}
+.head{
+    background-color: cornflowerblue;
+
+}
+.head:hover{
+    background-color: darkgrey;
+}
+.row1:nth-child(even){
+    background-color: darkseagreen;
+}
+.row1:nth-child(even):hover{
+    background-color: darkviolet;
+}
