@@ -1,43 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <style>
-        .relative {
-  position: relative;
-  width: 400px;
-  height: 200px;
-  border: 3px solid #73AD21;
-} 
-.absolute {
-  position: absolute;
-  top: 80px;
-  right: 0;
-  width: 200px;
-  height: 100px;
-  border: 3px solid #73AD21;
-}
+        .size {
+            width: 150px;
+            height: 150px;
+        }
+
+        .div1 {
+            background-color: brown;
+            position: relative;
+            margin-top: 25%;
+            margin-left: 50%;
+        }
+
+        .div2 {
+            background-color: green;
+            position: absolute;
+            left: 58%;
+            top: 40%;
+        }
     </style>
-</head>
+
 <body>
-    
-    <div style="background-color: rgb(146, 64, 64);width: 75%;height: 200px;
-    margin-top:50px;">
-    <p style="padding: 45px;">Expertzlab</p>
+
+    <div class="size div1">
+
+    </div>
+    <div class="size div2">
 
 
     </div>
+    <i class="fa fa-car" style="color: blue;font-size: 40px;"></i>
+    <a href="home.html"> <i class="fa fa-twitter fa-5x"></i></a>
 
-    <div class="relative">
-        This is the div with position relative
-        <div class="absolute">
-            this is the div with position absolute
+    <div class="panel panel-primary">
+        <div class="panel-heading">Expertzlab</div>
+        <div class="panel-body">MeanStack</div>
+    </div>
+
+    <div class="panel panel-success">
+        <div class="panel-heading">Panel with panel-success class</div>
+        <div class="panel-body">Panel Content</div>
+    </div>
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        subcolumn1
+                    </div>
+                    <div class="col-sm-6">
+                        subcolumn2
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-sm-6">
+                column3
+            </div>
+
+
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        subcolumn1
+                    </div>
+                    <div class="col-sm-6">
+                        subcolumn2
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-sm-6">
+                column3
+            </div>
+
+
         </div>
     </div>
 
 
 
+
 </body>
+
 </html>
