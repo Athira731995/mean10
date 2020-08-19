@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload='prompt("Enter Your name")'>
+<body >
 
     <script>
         console.log("hello world....")
         document.write("Hello World")
+        //declaring variable as literals
         var x;
         x=100
         console.log("value of x=",x,typeof x)
@@ -24,8 +25,63 @@
         console.log(typeof y)
         var obj=null;
         console.log(typeof obj)
+        function add(x,y,z=20){
+           
+            var result=x+y+z
+            // console.log(result)
+            // return result
+        }
+
+       var sum= add(1,2)
+       console.log("Sum =",sum)
+       console.log( add(45,67))
+        add(2,2,3)
+        var x=100;
+        x=40
+        let z=50
+        const code="#3232454"
+        // code="jfjdjf"
+        function greetings(msg){
+            return "hello all "+msg
+        }
+        var result=greetings("Good after noon")
+        console.log(result)
+        //Arithmetic Operations
+        var i=10;var j=20
+        var mul=i*j
+        console.log(mul)
+        var div=j/i
+        var rem=j%i
+        console.log(rem)
+        var p=i**3
+        console.log(p)
+        //i=i+2
+        i+=2
+        console.log(i)
+    //relational operators
+        var a=10;var b="10";var q=20
+        console.log(a==b)
+        console.log(a===b)
+        console.log(a<q)
+        console.log(a>=q)
+        console.log(a!==b)
+        console.log(a!=q)
+    //logical operators
+    var n1=124 ;var n2=123;var n3=90
+    console.log(n1===n2 && n2>n3)
+    console.log(n1===n2 || n2>n3)
+    console.log(!(n1===n2))
+
     </script>
     <button onclick="alert('hey all')">click</button>
+    <button onclick="getdata()">
+        Click me
+    </button>
+    Name<input type="text" id=name>
+    Age<input type="text" id=age>
+
+
+
     
 </body>
 </html>
