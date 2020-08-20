@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let j = 50
+        test()
+        console.log(z)
+        //global
+        var i = 100
+        function test() {
+            //local variable
+            var x = 10
+            let y = 20
+            i = 300
+            console.log("inside", i)
+            console.log(j)
+
+        }
+        var sample = function () {
+            console.log("sample function called...")
+        }
+        console.log(sample)
+        sample()
+
+        var z = 900
+        //   test()
+        console.log("outside", i)
+        var x = 123; var y = 23
+        if (x < y) {
+            console.log("inside if")
+            console.log(x ** 2)
+        } else if (x == y) {
+            console.log("equal")
+
+        }
+        else if (x > y) {
+            console.log("x is greater than y by ", x - y)
+        }
+        else {
+            console.log("inside else block")
+            x = x - y
+            console.log(x ** 2)
+        }
+        console.log("outside if")
+        var a = 100; var b = 50; c = 75;
+        if (a > b && a > c) {
+            console.log(a, "is the largest")
+        } else if (b > a && b > c) {
+            console.log(b, "is the largest")
+        } else {
+            console.log(c, "is the largest")
+        }
+    </script>
+
+</body>
+
+</html>
