@@ -44,8 +44,4 @@ function validate(){
         password.focus()
         return false;
     }
-
-    
-
-
 }
