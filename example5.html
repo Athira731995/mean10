@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function serach() {
+            let content = document.getElementById("content").value;
+            let word = document.getElementById("search").value;
+            let regex = new RegExp(word, "g")
+            document.getElementById("highlight").innerHTML =
+                content.replace(regex, "<span style='background-color:yellow'>" + word + "</span>")
+        }
+    </script>
+    <textarea id="content" cols="30" rows="10">
+    </textarea>
+    <input type="text" id="search">
+    <button onclick="serach()">search</button>
+    <div id="highlight">
+
+    </div>
+
+
+</body>
+
+</html>

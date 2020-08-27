@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Todo</h1>
+    <div class="row">
+        <script src="js/objects.js"></script>
+        <script src="todo.js"></script>
+
+        <div class="col-sm-6">
+
+            <input type="text" class="form-control" name="" id="task">
+            <button class="btn btn-primary" onclick="addtask()">+</button>
+            <div>
+                <ul id="mytasks">
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="col-sm-6">
+            &copy
+        </div>
+
+
+
+    </div>
+
+    <div id=footer></div>
+    <script>
+        document.getElementById("footer").innerHTML = "\u00A9 reserverd to expertzlab"
+    </script>
+</body>
+
+</html>
